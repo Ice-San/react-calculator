@@ -1,0 +1,98 @@
+.background {
+    background-color: rgb(19, 19, 19);
+
+    width: 100%;
+    height: 100vh;
+}
+
+.calcs-background {
+    background-color: rgb(31, 31, 31);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 35%;
+}
+
+.calcs-background h1 {
+    font-family: 'digital-rg', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: clamp( 75px, 7vw, 100px);
+
+    margin-left: 25px;
+}
+
+.calcs-background span {
+    animation: resultFade 1s infinite ease-in-out;
+}
+
+@keyframes resultFade {
+    0%, 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+.btns-background {
+    background-color: rgb(19, 19, 19);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    height: 65%;
+}
+
+.btns-flex {
+    margin-top: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: auto;
+}
+
+.btns {
+    background-color: rgb(49, 49, 49);
+    border-radius: 8px;
+    
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: clamp(25px, 5vw, 35px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: default;
+
+    width: 23.25vw;
+    
+    height: 6.25vw;
+    min-height: 72.5px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.btns-flex:nth-child(1) .btns:nth-child(3), .btns-flex:nth-child(1) .btns:nth-child(2), .btns-flex:last-child .btns:last-child {
+    background-color: rgb(198, 100, 3);
+}
+
+.btns:not(.btns-flex:first-child .btns:first-child, .btns-flex:last-child .btns:first-child):hover {
+    background-color: rgb(71, 71, 71);
+    transform: scale(0.95);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.btns-flex:nth-child(1) .btns:nth-child(3):hover, .btns-flex:nth-child(1) .btns:nth-child(2):hover, .btns-flex:last-child .btns:last-child:hover {
+    background-color: rgb(226, 123, 19) !important;
+}
