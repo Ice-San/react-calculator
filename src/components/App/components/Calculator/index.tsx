@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import { Button } from "../Button";
-
-export const Calculator = () => {
-=======
 import { useState, useEffect } from "react";
 import { Button } from "../Button";
 import { isNumber } from "../../../../utils";
@@ -13,7 +8,6 @@ export const Calculator = () => {
     const [numbers, setNumbers] = useState<any[]>([]);
     const [currentNumber, setCurrentNumber] = useState('');
 
->>>>>>> rc-2
     const rows = [
         [" ", "CE", "C", "/"],
         ["7", "8", "9", "*"],
@@ -22,12 +16,6 @@ export const Calculator = () => {
         [" ", "0", ".", "="]
     ];
 
-<<<<<<< HEAD
-    return (
-        <div className='background'>
-            <div className="calcs-background">
-                <h1><span>|</span></h1>
-=======
     const calc = () => numbers?.reduce((prev, current, index) => {
         const valuePrev = Number(prev);
         const valueCurrent = Number(current);
@@ -156,17 +144,12 @@ export const Calculator = () => {
         <div className='background'>
             <div className="calcs-background">
                 <h1>{display}<span>|</span></h1>
->>>>>>> rc-2
             </div>
 
             <div className="btns-background">
                 {rows.map((cols, index) => (
                     <div key={index} className="btns-flex">
-<<<<<<< HEAD
-                        {cols.map((label, index) => (<Button key={index} value={label}>{label}</Button>))}
-=======
                         {cols.map((label, index) => (<Button key={index} onClick={() => {handleResult(label)}}>{label}</Button>))}
->>>>>>> rc-2
                     </div>
                 ))}
             </div>
