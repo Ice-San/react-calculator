@@ -12,6 +12,11 @@
     justify-content: flex-start;
     align-items: center;
 
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+
+>>>>>>> rc-2
     width: 100%;
     height: 35%;
 }
@@ -25,7 +30,11 @@
 }
 
 .calcs-background span {
+<<<<<<< HEAD
     animation: resultFade 0.5s infinite ease-in-out;
+=======
+    animation: resultFade 1s infinite ease-in-out;
+>>>>>>> rc-2
 }
 
 @keyframes resultFade {

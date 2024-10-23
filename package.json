@@ -1,12 +1,20 @@
 {
+<<<<<<< HEAD
   "name": "calculator-react",
+=======
+  "name": "react-calculator",
+>>>>>>> rc-2
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+<<<<<<< HEAD
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+=======
+    "lint": "eslint .",
+>>>>>>> rc-2
     "preview": "vite preview"
   },
   "dependencies": {
@@ -14,6 +22,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
@@ -25,5 +34,19 @@
     "nodemon": "^3.1.4",
     "typescript": "^5.2.2",
     "vite": "^5.3.4"
+=======
+    "@eslint/js": "^9.11.1",
+    "@types/react": "^18.3.10",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "eslint": "^9.11.1",
+    "eslint-plugin-react-hooks": "^5.1.0-rc.0",
+    "eslint-plugin-react-refresh": "^0.4.12",
+    "globals": "^15.9.0",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^8.7.0",
+    "vite": "^5.4.8"
+>>>>>>> rc-2
   }
 }
