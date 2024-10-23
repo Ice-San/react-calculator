@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Button } from "../Button";
 import { isNumber } from "../../../../utils";
 
-const [display, setDisplay] = useState('');
 export const Calculator = () => {
+    const [display, setDisplay] = useState('');
     const [operators, setOperators] = useState<any[]>([]);
     const [numbers, setNumbers] = useState<any[]>([]);
     const [currentNumber, setCurrentNumber] = useState('');
@@ -94,11 +94,11 @@ export const Calculator = () => {
         setCurrentNumber(currentNumber + number);
     }
 
-    // const setDot = (dot: string) => {
-    //     setDisplay(display + dot);
+    const setDot = (dot: string) => {
+        setDisplay(display + dot);
 
-    //     setCurrentNumber(currentNumber + dot);
-    // }
+        setCurrentNumber(currentNumber + dot);
+    }
 
     const handleResult = (value: string) => {
 
@@ -120,7 +120,7 @@ export const Calculator = () => {
         
         if(isNumber(value)) setNumber(value);
         
-        // if(value === '.') setDot(value);
+        if(value === '.') setDot(value);
 
     };
 
